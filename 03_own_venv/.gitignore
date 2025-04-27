@@ -1,28 +1,9 @@
 # Custom
-.streamlit/secrets.toml
-**/.streamlit/secrets.toml
 .env
-**/.env
-# Secrets und Umgebungsvariablen
-**/.env
-**/.streamlit/secrets.toml
+
 
 # Projektbezogene Assets
-assets/Landon Hotel Employee Manual_10_25_2023_LIL_34022.docx
-assets/README.txt
 start.bat
-
-# Bytecode und temporäre Dateien
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Umgebungen und Builds
-.venv/
-venv/
-env/
-build/
-dist/
 
 
 # Spezifische Pfade für dieses Projekt
