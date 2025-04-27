@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+pymongo
+boto3
+awswrangler
+python-dotenv
+langchain
+langchain_openai
+langchain_community
+requests
+streamlit
+python-docx
+PyPDF2
+python-multipart
+docx2txt
+faiss-cpu
