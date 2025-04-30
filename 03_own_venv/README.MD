@@ -63,7 +63,7 @@ Einfacher Einstieg, um dein AI-Dashboard (Backend + Frontend) lokal unter Window
 ## 🔗 Wichtige Links
 
 - **GitHub Repo**  
-  https://github.com/DanEm95/python_webapps/tree/64daec26a494cd37adc29f422bb5b44c826cbfe0/03_own_venv
+  https://github.com/DanEm95/python_webapps/tree/main/03_own_venv
 
 - **AWS S3 Bucket “myawslearninglinkedin”**  
   https://us-east-2.console.aws.amazon.com/s3/buckets/myawslearninglinkedin?region=us-east-2&bucketType=general&tab=objects
