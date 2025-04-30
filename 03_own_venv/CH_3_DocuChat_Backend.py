@@ -1,3 +1,5 @@
+#TODO datein sollen auf MongoDB hochgeladen werden.
+
 from pydantic import BaseModel
 import pymongo
 import os

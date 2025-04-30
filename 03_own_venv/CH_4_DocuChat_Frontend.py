@@ -18,7 +18,7 @@ def chat(user_input, data, session_id=None):
     }
 
     try:
-        response = requests.post(url, headers=headers, json=payload, timeout=10)
+        response = requests.post(url, headers=headers, json=payload, timeout=20)
         response.raise_for_status()
         response_data = response.json()
         return response_data.get("response", {}).get("answer"), response_data.get("session_id")
@@ -35,7 +35,11 @@ def upload_file(file_path):
             filename = os.path.basename(file_path)
             file_type = "application/pdf" if filename.endswith(".pdf") else "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             files = [("data_file", (filename, f, file_type))]
-            response = requests.post(url, headers=headers, files=files, timeout=10)
+            try:
+                response = requests.post(url, headers=headers, files=files, timeout=20)
+            except requests.exceptions.Timeout:
+                print("Timeout occurred")            
+
             response.raise_for_status()
             return response.json().get("file_path", "").split("/")[-1]
     except Exception as e:
